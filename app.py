@@ -1,7 +1,8 @@
 from flask import *
 import json
 from pymongo import MongoClient
-client = MongoClient('mongodb://localhost:27017/')
+# Connect to the MongoDB server
+client = MongoClient('...') #Add your server address
 db = client['Quizzard']
 collection = db['data']
 app = Flask(__name__)
